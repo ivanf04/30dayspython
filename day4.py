@@ -1,7 +1,7 @@
 # # letter = 'P'
 # # print(letter)
 # # print(len(letter))
-# # sentence = 'Your mom is gay and your dad is a fag'
+# # sentence = 'blah blah blah'
 # # print(sentence)
 
 # multi_line_string = '''I am learning pyhtin 
@@ -30,5 +30,5 @@
 
 # print('{} + {} = {}'.format(a, b, a + b))
 
-string = 'Your mom is gaya, and your dad is a fag'
+string = 'I like turtles'
 print(string[::-1])
