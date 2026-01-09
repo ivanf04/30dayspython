@@ -28,8 +28,16 @@ else:
     print('A is not a disjoint of B')
 print(A.symmetric_difference(B))
 
+del A
+del B
+
 age_set = set(age)
 if len(age) > len(age_set):
     print('The age list is longer')
 else:
-    print('The age set is bigger')
+    print('The age set is longer')
+
+# Level 3 question 2: A string is a block of text, characters stored sequentially in memory.
+# A lists is an indexed and orders collection of objects. List elements are mutable and individually accessible
+# A Tuple is similar to a list, but its elements are immuatble 
+# A set is an unodered immutable collection of objects, they operate similarly to sets in mathematics
