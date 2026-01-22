@@ -5,7 +5,7 @@ def mean(data):
     sum = 0
     for datum in data:
         sum += datum
-    return sum/ len(data)
+    return sum / len(data)
 
 def median(data):
     index = len(data) // 2
@@ -27,9 +27,9 @@ def mode(data):
         if dataPoints.get(datum) > maxfrequency:
             maxfrequency = dataPoints.get(datum)
             modes.clear()
-            modes.append(dataPoints[datum])
+            modes.append(datum)
         elif dataPoints.get(datum) == maxfrequency:
-            modes.append(dataPoints[datum])
+            modes.append(datum)
     return modes
 
 def range(data):
@@ -42,9 +42,18 @@ def variance(data):
     summation = 0 
     for datum in data:
         summation += (datum - mu) ** 2
-    return summation / len(data - 2)
+    return summation / (len(data) - 1)
 
 def standardDeviation(data):
     return math.sqrt(variance(data))
 
 
+data = [5,7,10,12,30,45,45]
+mean_ = mean(data)
+median_ = median(data)
+mode_ = mode(data)
+range_ = range(data)
+variance_ = variance(data)
+standardDeviation_ = standardDeviation(data)
+
+print(f'Data: {data} \nMean: {mean_}\nmode: {mode_}\nrange: {range_}\nvariance: {variance_}\nstandard deviation: {standardDeviation_}')
